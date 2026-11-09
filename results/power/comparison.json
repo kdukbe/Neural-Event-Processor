@@ -1,0 +1,1040 @@
+{
+  "completed": 12,
+  "expected": 12,
+  "results": [
+    {
+      "mode": "always_on_8mhz",
+      "dataset": "burst",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.548411,
+        "clock_mw": 1.379102,
+        "signal_mw": 0.09795999999999999,
+        "logic_mw": 0.044944000000000005,
+        "bram_mw": 0.008221000000000001,
+        "dsp_mw": 0.018184000000000002
+      },
+      "sfe": {
+        "dynamic_mw": 0.6102569999999999,
+        "clock_mw": 0.567003,
+        "signal_mw": 0.030303999999999998,
+        "logic_mw": 0.012951,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.548411,
+        "clock_mw": 1.379102,
+        "signal_mw": 0.09795999999999999,
+        "logic_mw": 0.044944000000000005,
+        "bram_mw": 0.008221000000000001,
+        "dsp_mw": 0.018184000000000002
+      },
+      "resources": {
+        "lut": 2568.0,
+        "ff": 4470.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "3f6b5ae694b324f77de9addd5a155ee9742f031538202ffe504361fbd98cc638",
+        "observation_s": 0.0852,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": false,
+        "source_clock_edges": 1363200,
+        "delivered_clock_edges": 1363200,
+        "delivered_clock_pulses": 681600.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 8.0,
+        "average_period_ns_for_power_only": 125.0,
+        "average_high_pulse_ns": 62.5,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19206,
+          "both_direct_saif": 18507,
+          "default_constant": 441,
+          "propagated_or_constrained": 128,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.36051233989379
+        },
+        "register_outputs": {
+          "entries": 4470,
+          "both_direct_saif": 4470,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2558,
+          "both_direct_saif": 2558,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 33280,
+      "output_events": 504,
+      "threshold": 24962,
+      "dcp_sha256": "9974f37c9ee95f44f44327bc33dafcb29c709adf5995ace90d792c1aeb7fbaaa",
+      "result_records_sha256": "e993b9182ef95041a4ed3256329207bccbb935ca18de97579281a48b78c9d8e7",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/burst/always_on_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "18116d274246c5cc3c629111ed31284b6fb147b5ac27916496037f08f3b85463",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "event_driven_8mhz",
+      "dataset": "burst",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 0.9824640000000001,
+        "clock_mw": 0.812813,
+        "signal_mw": 0.09790900000000001,
+        "logic_mw": 0.045337,
+        "bram_mw": 0.008221000000000001,
+        "dsp_mw": 0.018184000000000002
+      },
+      "sfe": {
+        "dynamic_mw": 0.07742600000000001,
+        "clock_mw": 0.033305,
+        "signal_mw": 0.030824999999999998,
+        "logic_mw": 0.013295,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.5900260000000002,
+        "clock_mw": 1.420375,
+        "signal_mw": 0.09790900000000001,
+        "logic_mw": 0.045337,
+        "bram_mw": 0.008221000000000001,
+        "dsp_mw": 0.018184000000000002
+      },
+      "resources": {
+        "lut": 2572.0,
+        "ff": 4477.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "a18b3cb92eaedef75da23a9b2686183619a9a2b45cea177c658f6959a11641e0",
+        "observation_s": 0.0852,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": true,
+        "source_clock_edges": 1363200,
+        "delivered_clock_edges": 72198,
+        "delivered_clock_pulses": 36099.0,
+        "clock_delivery_fraction": 0.052962147887323945,
+        "average_clock_mhz_for_power_only": 0.42369718309859156,
+        "average_period_ns_for_power_only": 2360.176182165711,
+        "average_high_pulse_ns": 62.5,
+        "clock_high_fraction": 0.026481073943661972,
+        "enable_fraction": 0.052962147887323945,
+        "enable_transitions": 90
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19253,
+          "both_direct_saif": 18548,
+          "default_constant": 444,
+          "propagated_or_constrained": 131,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.33823300264893
+        },
+        "register_outputs": {
+          "entries": 4477,
+          "both_direct_saif": 4477,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2563,
+          "both_direct_saif": 2563,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 33280,
+      "output_events": 504,
+      "threshold": 24962,
+      "dcp_sha256": "e5511faff7e85c0cb8880373585776c430f681fcccc8645b113f7f3ac68fd3c6",
+      "result_records_sha256": "e993b9182ef95041a4ed3256329207bccbb935ca18de97579281a48b78c9d8e7",
+      "changed_activity_nodes": [
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/g_event_driven.u_SFEClockControl/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE/sfe_run_clk"
+      ],
+      "power_report": "results/power/evidence/burst/event_driven_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "f39b6606ce7c7ca93d3b86eb0ba885e249a1712cb6b3ebee5fb2373be20c4393",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "always_on_1mhz",
+      "dataset": "burst",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.097132,
+        "clock_mw": 0.9182380000000001,
+        "signal_mw": 0.10439400000000001,
+        "logic_mw": 0.048094000000000005,
+        "bram_mw": 0.008221000000000001,
+        "dsp_mw": 0.018184000000000002
+      },
+      "sfe": {
+        "dynamic_mw": 0.120723,
+        "clock_mw": 0.076822,
+        "signal_mw": 0.030440000000000002,
+        "logic_mw": 0.013462,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.097132,
+        "clock_mw": 0.9182380000000001,
+        "signal_mw": 0.10439400000000001,
+        "logic_mw": 0.048094000000000005,
+        "bram_mw": 0.008221000000000001,
+        "dsp_mw": 0.018184000000000002
+      },
+      "resources": {
+        "lut": 2818.0,
+        "ff": 4504.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "67bb696c6b6db7f89930370a19eefe5eef0b613405a249f27d3c16aac8f43f43",
+        "observation_s": 0.0852,
+        "hardware_sfe_mhz": 1,
+        "clock_gated": false,
+        "source_clock_edges": 170400,
+        "delivered_clock_edges": 170400,
+        "delivered_clock_pulses": 85200.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 1.0,
+        "average_period_ns_for_power_only": 1000.0,
+        "average_high_pulse_ns": 500.0,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 20832,
+          "both_direct_saif": 20053,
+          "default_constant": 425,
+          "propagated_or_constrained": 176,
+          "default_nonconstant": 178,
+          "direct_saif_percent": 96.26056067588326
+        },
+        "register_outputs": {
+          "entries": 4504,
+          "both_direct_saif": 4504,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2606,
+          "both_direct_saif": 2606,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 33280,
+      "output_events": 504,
+      "threshold": 24962,
+      "dcp_sha256": "3c23c4c3e1b786eb271eec166cbab37af95fb160fdf4f47013ee2837a5d6fd0a",
+      "result_records_sha256": "e993b9182ef95041a4ed3256329207bccbb935ca18de97579281a48b78c9d8e7",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/burst/always_on_1mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "242d42cd85bd8abe38ccce694fbd9dc17b033d8842f8d28afcd6c427e8a27ba4",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "always_on_8mhz",
+      "dataset": "real1",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.4838030000000002,
+        "clock_mw": 1.375165,
+        "signal_mw": 0.061927,
+        "logic_mw": 0.027849000000000002,
+        "bram_mw": 0.005315,
+        "dsp_mw": 0.013548000000000001
+      },
+      "sfe": {
+        "dynamic_mw": 0.569566,
+        "clock_mw": 0.564041,
+        "signal_mw": 0.003973,
+        "logic_mw": 0.0015509999999999999,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.4838030000000002,
+        "clock_mw": 1.375165,
+        "signal_mw": 0.061927,
+        "logic_mw": 0.027849000000000002,
+        "bram_mw": 0.005315,
+        "dsp_mw": 0.013548000000000001
+      },
+      "resources": {
+        "lut": 2568.0,
+        "ff": 4470.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "450985afbc3a25224a481ee5d86000352f4675e0cd19dcbb1961f1fa17f9e7ed",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": false,
+        "source_clock_edges": 19252480,
+        "delivered_clock_edges": 19252480,
+        "delivered_clock_pulses": 9626240.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 8.000000000000002,
+        "average_period_ns_for_power_only": 125.0,
+        "average_high_pulse_ns": 62.5,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19206,
+          "both_direct_saif": 18507,
+          "default_constant": 441,
+          "propagated_or_constrained": 128,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.36051233989379
+        },
+        "register_outputs": {
+          "entries": 4470,
+          "both_direct_saif": 4470,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2558,
+          "both_direct_saif": 2558,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 852,
+      "threshold": 1108,
+      "dcp_sha256": "9974f37c9ee95f44f44327bc33dafcb29c709adf5995ace90d792c1aeb7fbaaa",
+      "result_records_sha256": "c00b68a8a297ec1b02cdf3f86696a943830b653743b5d7dc7081a0398004a4b7",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/real1/always_on_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "a5a18aef74caaf569512c000cdef4e8d4b61b7e962f31615d0d04ee8ebff01a3",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "event_driven_8mhz",
+      "dataset": "real1",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 0.890357,
+        "clock_mw": 0.782413,
+        "signal_mw": 0.061295,
+        "logic_mw": 0.027788,
+        "bram_mw": 0.005315,
+        "dsp_mw": 0.013548000000000001
+      },
+      "sfe": {
+        "dynamic_mw": 0.009914,
+        "clock_mw": 0.004272000000000001,
+        "signal_mw": 0.004051,
+        "logic_mw": 0.001592,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.52418,
+        "clock_mw": 1.416235,
+        "signal_mw": 0.061295,
+        "logic_mw": 0.027788,
+        "bram_mw": 0.005315,
+        "dsp_mw": 0.013548000000000001
+      },
+      "resources": {
+        "lut": 2572.0,
+        "ff": 4477.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "c94d1639c35035c47b1136d0a3a9fc092d9c3aa0e4559d76f31b85604be964b5",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": true,
+        "source_clock_edges": 19252480,
+        "delivered_clock_edges": 131480,
+        "delivered_clock_pulses": 65740.0,
+        "clock_delivery_fraction": 0.006829250049863706,
+        "average_clock_mhz_for_power_only": 0.05463400039890965,
+        "average_period_ns_for_power_only": 18303.620322482508,
+        "average_high_pulse_ns": 62.49999999999999,
+        "clock_high_fraction": 0.003414625024931853,
+        "enable_fraction": 0.006829250049863706,
+        "enable_transitions": 1502
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19253,
+          "both_direct_saif": 18548,
+          "default_constant": 444,
+          "propagated_or_constrained": 131,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.33823300264893
+        },
+        "register_outputs": {
+          "entries": 4477,
+          "both_direct_saif": 4477,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2563,
+          "both_direct_saif": 2563,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 852,
+      "threshold": 1108,
+      "dcp_sha256": "e5511faff7e85c0cb8880373585776c430f681fcccc8645b113f7f3ac68fd3c6",
+      "result_records_sha256": "c00b68a8a297ec1b02cdf3f86696a943830b653743b5d7dc7081a0398004a4b7",
+      "changed_activity_nodes": [
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/g_event_driven.u_SFEClockControl/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE/sfe_run_clk"
+      ],
+      "power_report": "results/power/evidence/real1/event_driven_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "9e4e331e5d84df2491106ebc1bbac664beafde1ac735757508619929ff67891d",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "always_on_1mhz",
+      "dataset": "real1",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.0215940000000001,
+        "clock_mw": 0.9145019999999999,
+        "signal_mw": 0.06019,
+        "logic_mw": 0.02804,
+        "bram_mw": 0.005315,
+        "dsp_mw": 0.013548000000000001
+      },
+      "sfe": {
+        "dynamic_mw": 0.079652,
+        "clock_mw": 0.074044,
+        "signal_mw": 0.0039900000000000005,
+        "logic_mw": 0.001618,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.0215940000000001,
+        "clock_mw": 0.9145019999999999,
+        "signal_mw": 0.06019,
+        "logic_mw": 0.02804,
+        "bram_mw": 0.005315,
+        "dsp_mw": 0.013548000000000001
+      },
+      "resources": {
+        "lut": 2818.0,
+        "ff": 4504.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "4d0b0e00b714e48d2f8809b3f584dd857a4c87b68609887bcdd8dfc1e3d23e47",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 1,
+        "clock_gated": false,
+        "source_clock_edges": 2406560,
+        "delivered_clock_edges": 2406560,
+        "delivered_clock_pulses": 1203280.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 1.0000000000000002,
+        "average_period_ns_for_power_only": 1000.0,
+        "average_high_pulse_ns": 500.0,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 20832,
+          "both_direct_saif": 20053,
+          "default_constant": 425,
+          "propagated_or_constrained": 176,
+          "default_nonconstant": 178,
+          "direct_saif_percent": 96.26056067588326
+        },
+        "register_outputs": {
+          "entries": 4504,
+          "both_direct_saif": 4504,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2606,
+          "both_direct_saif": 2606,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 852,
+      "threshold": 1108,
+      "dcp_sha256": "3c23c4c3e1b786eb271eec166cbab37af95fb160fdf4f47013ee2837a5d6fd0a",
+      "result_records_sha256": "c00b68a8a297ec1b02cdf3f86696a943830b653743b5d7dc7081a0398004a4b7",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/real1/always_on_1mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "2a79710cd1f203f2f0f7144f3a9677dd054ad295b2359130aaf834b78c72806d",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "always_on_8mhz",
+      "dataset": "real2",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.4786590000000002,
+        "clock_mw": 1.374906,
+        "signal_mw": 0.059048,
+        "logic_mw": 0.026479,
+        "bram_mw": 0.005131999999999999,
+        "dsp_mw": 0.013095
+      },
+      "sfe": {
+        "dynamic_mw": 0.567042,
+        "clock_mw": 0.563847,
+        "signal_mw": 0.0022879999999999997,
+        "logic_mw": 0.000906,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.4786590000000002,
+        "clock_mw": 1.374906,
+        "signal_mw": 0.059048,
+        "logic_mw": 0.026479,
+        "bram_mw": 0.005131999999999999,
+        "dsp_mw": 0.013095
+      },
+      "resources": {
+        "lut": 2568.0,
+        "ff": 4470.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "57192bf655c7a215f97ccd1586cfd77416005e4377c86e9eef0a28a2d676c6e8",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": false,
+        "source_clock_edges": 19252480,
+        "delivered_clock_edges": 19252480,
+        "delivered_clock_pulses": 9626240.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 8.000000000000002,
+        "average_period_ns_for_power_only": 125.0,
+        "average_high_pulse_ns": 62.5,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19206,
+          "both_direct_saif": 18507,
+          "default_constant": 441,
+          "propagated_or_constrained": 128,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.36051233989379
+        },
+        "register_outputs": {
+          "entries": 4470,
+          "both_direct_saif": 4470,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2558,
+          "both_direct_saif": 2558,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 472,
+      "threshold": 1508,
+      "dcp_sha256": "9974f37c9ee95f44f44327bc33dafcb29c709adf5995ace90d792c1aeb7fbaaa",
+      "result_records_sha256": "e550a5773fa3269333896eb4cdb95fdfb666e95850a0901cf04c1851afb5f336",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/real2/always_on_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "5a98b51147f56538e3f629056207754291cfda55f871bc6df60dd665e88333a8",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "event_driven_8mhz",
+      "dataset": "real2",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 0.883389,
+        "clock_mw": 0.7803869999999999,
+        "signal_mw": 0.058360999999999996,
+        "logic_mw": 0.026415,
+        "bram_mw": 0.005131999999999999,
+        "dsp_mw": 0.013095
+      },
+      "sfe": {
+        "dynamic_mw": 0.005595,
+        "clock_mw": 0.002336,
+        "signal_mw": 0.002331,
+        "logic_mw": 0.0009280000000000001,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.5189670000000002,
+        "clock_mw": 1.415964,
+        "signal_mw": 0.058360999999999996,
+        "logic_mw": 0.026415,
+        "bram_mw": 0.005131999999999999,
+        "dsp_mw": 0.013095
+      },
+      "resources": {
+        "lut": 2572.0,
+        "ff": 4477.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "e9c52d1bdff04a664cea55893f7dc495325e4a77c080e78255d94bd14dd481bc",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": true,
+        "source_clock_edges": 19252480,
+        "delivered_clock_edges": 71926,
+        "delivered_clock_pulses": 35963.0,
+        "clock_delivery_fraction": 0.0037359342796356625,
+        "average_clock_mhz_for_power_only": 0.029887474237085303,
+        "average_period_ns_for_power_only": 33458.83268915274,
+        "average_high_pulse_ns": 62.5,
+        "clock_high_fraction": 0.0018679671398178312,
+        "enable_fraction": 0.0037359342796356625,
+        "enable_transitions": 700
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19253,
+          "both_direct_saif": 18548,
+          "default_constant": 444,
+          "propagated_or_constrained": 131,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.33823300264893
+        },
+        "register_outputs": {
+          "entries": 4477,
+          "both_direct_saif": 4477,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2563,
+          "both_direct_saif": 2563,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 472,
+      "threshold": 1508,
+      "dcp_sha256": "e5511faff7e85c0cb8880373585776c430f681fcccc8645b113f7f3ac68fd3c6",
+      "result_records_sha256": "e550a5773fa3269333896eb4cdb95fdfb666e95850a0901cf04c1851afb5f336",
+      "changed_activity_nodes": [
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/g_event_driven.u_SFEClockControl/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE/sfe_run_clk"
+      ],
+      "power_report": "results/power/evidence/real2/event_driven_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "d34985fc1643e0983756d844c8de81edbc6c0247615159cf819713012b19ab70",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "always_on_1mhz",
+      "dataset": "real2",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.015811,
+        "clock_mw": 0.914271,
+        "signal_mw": 0.056782,
+        "logic_mw": 0.026531,
+        "bram_mw": 0.005131999999999999,
+        "dsp_mw": 0.013095
+      },
+      "sfe": {
+        "dynamic_mw": 0.077116,
+        "clock_mw": 0.07387600000000001,
+        "signal_mw": 0.002294,
+        "logic_mw": 0.0009469999999999999,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.015811,
+        "clock_mw": 0.914271,
+        "signal_mw": 0.056782,
+        "logic_mw": 0.026531,
+        "bram_mw": 0.005131999999999999,
+        "dsp_mw": 0.013095
+      },
+      "resources": {
+        "lut": 2818.0,
+        "ff": 4504.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "d30edf62a242e19a041c27550115aa849bd4b9e2dcbf7d8ba83dda255b5ad108",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 1,
+        "clock_gated": false,
+        "source_clock_edges": 2406560,
+        "delivered_clock_edges": 2406560,
+        "delivered_clock_pulses": 1203280.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 1.0000000000000002,
+        "average_period_ns_for_power_only": 1000.0,
+        "average_high_pulse_ns": 500.0,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 20832,
+          "both_direct_saif": 20053,
+          "default_constant": 425,
+          "propagated_or_constrained": 176,
+          "default_nonconstant": 178,
+          "direct_saif_percent": 96.26056067588326
+        },
+        "register_outputs": {
+          "entries": 4504,
+          "both_direct_saif": 4504,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2606,
+          "both_direct_saif": 2606,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 472,
+      "threshold": 1508,
+      "dcp_sha256": "3c23c4c3e1b786eb271eec166cbab37af95fb160fdf4f47013ee2837a5d6fd0a",
+      "result_records_sha256": "e550a5773fa3269333896eb4cdb95fdfb666e95850a0901cf04c1851afb5f336",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/real2/always_on_1mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "00c1674b5d94c6bee2aea31683ade5ab4a250a4b01e17b0861ecf1addc0b67b1",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "always_on_8mhz",
+      "dataset": "real3",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.4847000000000001,
+        "clock_mw": 1.3751780000000002,
+        "signal_mw": 0.061979,
+        "logic_mw": 0.02788,
+        "bram_mw": 0.005326,
+        "dsp_mw": 0.014337
+      },
+      "sfe": {
+        "dynamic_mw": 0.56974,
+        "clock_mw": 0.5640499999999999,
+        "signal_mw": 0.004091,
+        "logic_mw": 0.001599,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.4847000000000001,
+        "clock_mw": 1.3751780000000002,
+        "signal_mw": 0.061979,
+        "logic_mw": 0.02788,
+        "bram_mw": 0.005326,
+        "dsp_mw": 0.014337
+      },
+      "resources": {
+        "lut": 2568.0,
+        "ff": 4470.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "1039e909289b6ef27e84d0b6d003ea22103538a009089a0a2e74f8845f6e3830",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": false,
+        "source_clock_edges": 19252480,
+        "delivered_clock_edges": 19252480,
+        "delivered_clock_pulses": 9626240.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 8.000000000000002,
+        "average_period_ns_for_power_only": 125.0,
+        "average_high_pulse_ns": 62.5,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19206,
+          "both_direct_saif": 18507,
+          "default_constant": 441,
+          "propagated_or_constrained": 128,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.36051233989379
+        },
+        "register_outputs": {
+          "entries": 4470,
+          "both_direct_saif": 4470,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2558,
+          "both_direct_saif": 2558,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 878,
+      "threshold": 1970,
+      "dcp_sha256": "9974f37c9ee95f44f44327bc33dafcb29c709adf5995ace90d792c1aeb7fbaaa",
+      "result_records_sha256": "829ae13ba4c83d23bef85df75dfb31b9402b97ec3ad35f45d467d6c89e85e1ab",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/real3/always_on_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "d2dbca710f32026bead32476d24cc00382e412e07dde2aecbd66f448aa05fd54",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "event_driven_8mhz",
+      "dataset": "real3",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 0.8914,
+        "clock_mw": 0.782531,
+        "signal_mw": 0.061401000000000004,
+        "logic_mw": 0.027806,
+        "bram_mw": 0.005326,
+        "dsp_mw": 0.014337
+      },
+      "sfe": {
+        "dynamic_mw": 0.010195000000000001,
+        "clock_mw": 0.004383,
+        "signal_mw": 0.0041719999999999995,
+        "logic_mw": 0.001641,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.52512,
+        "clock_mw": 1.41625,
+        "signal_mw": 0.061401000000000004,
+        "logic_mw": 0.027806,
+        "bram_mw": 0.005326,
+        "dsp_mw": 0.014337
+      },
+      "resources": {
+        "lut": 2572.0,
+        "ff": 4477.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "a16fbcac499a9f3e0266cf6d2d83f8210d2daaf00dedc02988cdef38b0e8982f",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 8,
+        "clock_gated": true,
+        "source_clock_edges": 19252480,
+        "delivered_clock_edges": 134890,
+        "delivered_clock_pulses": 67445.0,
+        "clock_delivery_fraction": 0.007006370088424972,
+        "average_clock_mhz_for_power_only": 0.056050960707399775,
+        "average_period_ns_for_power_only": 17840.90740603455,
+        "average_high_pulse_ns": 62.5,
+        "clock_high_fraction": 0.003503185044212486,
+        "enable_fraction": 0.007006370088424972,
+        "enable_transitions": 1464
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 19253,
+          "both_direct_saif": 18548,
+          "default_constant": 444,
+          "propagated_or_constrained": 131,
+          "default_nonconstant": 130,
+          "direct_saif_percent": 96.33823300264893
+        },
+        "register_outputs": {
+          "entries": 4477,
+          "both_direct_saif": 4477,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2563,
+          "both_direct_saif": 2563,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 878,
+      "threshold": 1970,
+      "dcp_sha256": "e5511faff7e85c0cb8880373585776c430f681fcccc8645b113f7f3ac68fd3c6",
+      "result_records_sha256": "829ae13ba4c83d23bef85df75dfb31b9402b97ec3ad35f45d467d6c89e85e1ab",
+      "changed_activity_nodes": [
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/g_event_driven.u_SFEClockControl/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO/u_OFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO/sfe_run_clk",
+        "design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE/sfe_run_clk"
+      ],
+      "power_report": "results/power/evidence/real3/event_driven_8mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "5159cc241344a4c8d6bac8075ea61ba8493a24740a9cff6898e97f2aad1c5411",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    },
+    {
+      "mode": "always_on_1mhz",
+      "dataset": "real3",
+      "status": "validated",
+      "core": {
+        "dynamic_mw": 1.022582,
+        "clock_mw": 0.91452,
+        "signal_mw": 0.060315,
+        "logic_mw": 0.028083,
+        "bram_mw": 0.005326,
+        "dsp_mw": 0.014337
+      },
+      "sfe": {
+        "dynamic_mw": 0.079834,
+        "clock_mw": 0.074059,
+        "signal_mw": 0.004107,
+        "logic_mw": 0.001667,
+        "bram_mw": 0.0,
+        "dsp_mw": 0.0
+      },
+      "native_clock_core": {
+        "dynamic_mw": 1.022582,
+        "clock_mw": 0.91452,
+        "signal_mw": 0.060315,
+        "logic_mw": 0.028083,
+        "bram_mw": 0.005326,
+        "dsp_mw": 0.014337
+      },
+      "resources": {
+        "lut": 2818.0,
+        "ff": 4504.0,
+        "bram_tiles": 0.5,
+        "dsp": 2.0
+      },
+      "clock_activity": {
+        "saif_sha256": "cbbbfa33282c3c6f3af2554a67ff64f59bc7453ecb1fb4eb2d675323693f8e3a",
+        "observation_s": 1.20328,
+        "hardware_sfe_mhz": 1,
+        "clock_gated": false,
+        "source_clock_edges": 2406560,
+        "delivered_clock_edges": 2406560,
+        "delivered_clock_pulses": 1203280.0,
+        "clock_delivery_fraction": 1.0,
+        "average_clock_mhz_for_power_only": 1.0000000000000002,
+        "average_period_ns_for_power_only": 1000.0,
+        "average_high_pulse_ns": 500.0,
+        "clock_high_fraction": 0.5
+      },
+      "activity": {
+        "core_net_segments": {
+          "entries": 20832,
+          "both_direct_saif": 20053,
+          "default_constant": 425,
+          "propagated_or_constrained": 176,
+          "default_nonconstant": 178,
+          "direct_saif_percent": 96.26056067588326
+        },
+        "register_outputs": {
+          "entries": 4504,
+          "both_direct_saif": 4504,
+          "direct_saif_percent": 100.0
+        },
+        "lut_outputs": {
+          "entries": 2606,
+          "both_direct_saif": 2606,
+          "direct_saif_percent": 100.0
+        }
+      },
+      "confidence": "High",
+      "input_rows": 480512,
+      "output_events": 878,
+      "threshold": 1970,
+      "dcp_sha256": "3c23c4c3e1b786eb271eec166cbab37af95fb160fdf4f47013ee2837a5d6fd0a",
+      "result_records_sha256": "829ae13ba4c83d23bef85df75dfb31b9402b97ec3ad35f45d467d6c89e85e1ab",
+      "changed_activity_nodes": [],
+      "power_report": "results/power/evidence/real3/always_on_1mhz.zip!audit/modeled_uW.rpt",
+      "power_report_sha256": "1a97c0a36745efe38886e5c48e5053ee29089a8c3ff58cbf30f586eec2be26b3",
+      "label": "Board post-route SAIF-based dynamic power estimate; ED clock model uses observed mean pulse rate"
+    }
+  ],
+  "comparisons": [
+    {
+      "dataset": "burst",
+      "core": {
+        "ed8_vs_ao8_reduction_percent": 36.55017950660386,
+        "ed8_vs_ao1_reduction_percent": 10.45161384409532
+      },
+      "sfe": {
+        "ed8_vs_ao8_reduction_percent": 87.3125584794603,
+        "ed8_vs_ao1_reduction_percent": 35.86474822527603
+      }
+    },
+    {
+      "dataset": "real1",
+      "core": {
+        "ed8_vs_ao8_reduction_percent": 39.99493194177395,
+        "ed8_vs_ao1_reduction_percent": 12.846297061259182
+      },
+      "sfe": {
+        "ed8_vs_ao8_reduction_percent": 98.25937643749802,
+        "ed8_vs_ao1_reduction_percent": 87.55335710339979
+      }
+    },
+    {
+      "dataset": "real2",
+      "core": {
+        "ed8_vs_ao8_reduction_percent": 40.2574224347872,
+        "ed8_vs_ao1_reduction_percent": 13.036086437339234
+      },
+      "sfe": {
+        "ed8_vs_ao8_reduction_percent": 99.01330060207181,
+        "ed8_vs_ao1_reduction_percent": 92.7446963016754
+      }
+    },
+    {
+      "dataset": "real3",
+      "core": {
+        "ed8_vs_ao8_reduction_percent": 39.960934868997114,
+        "ed8_vs_ao1_reduction_percent": 12.82850666254639
+      },
+      "sfe": {
+        "ed8_vs_ao8_reduction_percent": 98.21058728542845,
+        "ed8_vs_ao1_reduction_percent": 87.22975173484981
+      }
+    }
+  ]
+}

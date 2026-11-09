@@ -1,0 +1,11 @@
+Selected Always-on RTL verification
+
+Input: 400 ksample/s, 16 simultaneous events repeated every 64 samples
+Configuration: MainPath 13 MHz, SFE 8 MHz, FIFO 4/16/8/512, Refractory 63
+
+Input rows: 32768
+Expected / RTL events: 512 / 512
+Python Golden: PASS
+Drop: 0
+Maximum IFIFO / Pending / OFIFO / WindowFIFO: 2 / 16 / 7 / 465
+Repeated bursts: 32

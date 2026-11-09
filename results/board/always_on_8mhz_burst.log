@@ -1,0 +1,3 @@
+Threshold-configurable Neural test: burst
+threshold=24962 input=33280 result=504 status=0x00000002
+PASS all 504 event records match Golden

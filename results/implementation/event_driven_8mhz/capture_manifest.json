@@ -1,0 +1,26 @@
+{
+  "architecture": "event_driven_8mhz",
+  "captured_at": "2026-09-09T14:22:26.7547909+09:00",
+  "files": [
+    {
+      "path": "results/implementation/event_driven_8mhz/routed.dcp",
+      "sha256": "e5511faff7e85c0cb8880373585776c430f681fcccc8645b113f7f3ac68fd3c6"
+    },
+    {
+      "path": "HW/xsa/event_driven_8mhz.xsa",
+      "sha256": "70e9b1b1d1df8ed028f55f16ddce8387c748b8fb312f28af2140cd4d56ceaeba"
+    },
+    {
+      "path": "results/implementation/event_driven_8mhz/design_1_wrapper_power_routed.rpt",
+      "sha256": "7cdd02ef5d733b4c25a79587085a048bc8910c2c1d086afbc7b7f4b57f2b923e"
+    },
+    {
+      "path": "results/implementation/event_driven_8mhz/design_1_wrapper_timing_summary_routed.rpt",
+      "sha256": "f6d006e57ff7ad87fcb3f706cad098e4d55abaa62fabc8be014441f2e0f3f2a4"
+    },
+    {
+      "path": "results/implementation/event_driven_8mhz/design_1_wrapper_utilization_placed.rpt",
+      "sha256": "932af9ec66c686db784047397044a6a232f0cc185221c64d9b2de2b6d889aa21"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+﻿dataset,architecture,module,dynamic_mw,core_share_percent,core_dynamic_mw,hierarchy,source
+burst,always_on_8mhz,SD,0.528861,34.155079,1.548411,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_8mhz,SFE,0.610257,39.411823,1.548411,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_8mhz,WindowBuffer,0.093299,6.025467,1.548411,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_8mhz,PendingQueue,0.107269,6.927683,1.548411,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_8mhz,WindowFIFO,0.102665,6.630346,1.548411,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_8mhz,OFIFO,0.050813,3.281622,1.548411,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_8mhz,IFIFO,0.051706,3.339294,1.548411,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_8mhz,Control / other,0.003541,0.228686,1.548411,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/burst/always_on_8mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,SD,0.511899,46.657923,1.097132,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,SFE,0.120723,11.003507,1.097132,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,WindowBuffer,0.091185,8.311215,1.097132,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,PendingQueue,0.103721,9.453831,1.097132,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,WindowFIFO,0.168608,15.368069,1.097132,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,OFIFO,0.047898,4.365746,1.097132,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,IFIFO,0.049606,4.521425,1.097132,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,always_on_1mhz,Control / other,0.003492,0.318284,1.097132,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/burst/always_on_1mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,SD,0.513080,52.223796,0.982464,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,SFE,0.077426,7.880798,0.982464,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,WindowBuffer,0.090511,9.212653,0.982464,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,PendingQueue,0.104114,10.597233,0.982464,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,WindowFIFO,0.092761,9.441669,0.982464,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,OFIFO,0.046351,4.717832,0.982464,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,IFIFO,0.051959,5.288642,0.982464,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+burst,event_driven_8mhz,Control / other,0.006262,0.637377,0.982464,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/burst/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,SD,0.521874,35.171381,1.483803,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,SFE,0.569566,38.385554,1.483803,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,WindowBuffer,0.088967,5.995877,1.483803,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,PendingQueue,0.106849,7.201023,1.483803,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,WindowFIFO,0.089709,6.045883,1.483803,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,OFIFO,0.050463,3.400923,1.483803,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,IFIFO,0.053344,3.595086,1.483803,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_8mhz,Control / other,0.003031,0.204272,1.483803,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real1/always_on_8mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,SD,0.504680,49.401230,1.021594,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,SFE,0.079652,7.796835,1.021594,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,WindowBuffer,0.086127,8.430649,1.021594,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,PendingQueue,0.103327,10.114292,1.021594,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,WindowFIFO,0.146094,14.300593,1.021594,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,OFIFO,0.047611,4.660462,1.021594,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,IFIFO,0.051169,5.008741,1.021594,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,always_on_1mhz,Control / other,0.002934,0.287198,1.021594,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real1/always_on_1mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,SD,0.506147,56.847647,0.890357,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,SFE,0.009914,1.113486,0.890357,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,WindowBuffer,0.086308,9.693640,0.890357,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,PendingQueue,0.103724,11.649709,0.890357,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,WindowFIFO,0.079111,8.885312,0.890357,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,OFIFO,0.045829,5.147261,0.890357,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,IFIFO,0.053579,6.017699,0.890357,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real1,event_driven_8mhz,Control / other,0.005745,0.645247,0.890357,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real1/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,SD,0.520399,35.193983,1.478659,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,SFE,0.567042,38.348395,1.478659,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,WindowBuffer,0.088692,5.998138,1.478659,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,PendingQueue,0.106815,7.223775,1.478659,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,WindowFIFO,0.088896,6.011934,1.478659,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,OFIFO,0.050459,3.412484,1.478659,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,IFIFO,0.053357,3.608472,1.478659,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_8mhz,Control / other,0.002999,0.202819,1.478659,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real2/always_on_8mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,SD,0.503230,49.539727,1.015811,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,SFE,0.077116,7.591570,1.015811,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,WindowBuffer,0.085805,8.446945,1.015811,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,PendingQueue,0.103296,10.168821,1.015811,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,WindowFIFO,0.144688,14.243595,1.015811,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,OFIFO,0.047595,4.685419,1.015811,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,IFIFO,0.051181,5.038437,1.015811,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,always_on_1mhz,Control / other,0.002900,0.285486,1.015811,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real2/always_on_1mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,SD,0.504708,57.133154,0.883389,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,SFE,0.005595,0.633356,0.883389,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,WindowBuffer,0.086040,9.739764,0.883389,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,PendingQueue,0.103693,11.738090,0.883389,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,WindowFIFO,0.078255,8.858498,0.883389,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,OFIFO,0.045795,5.184013,0.883389,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,IFIFO,0.053591,6.066523,0.883389,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real2,event_driven_8mhz,Control / other,0.005712,0.646601,0.883389,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real2/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,SD,0.522611,35.199771,1.484700,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,SFE,0.569740,38.374082,1.484700,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,WindowBuffer,0.088986,5.993534,1.484700,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,PendingQueue,0.106851,7.196807,1.484700,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,WindowFIFO,0.089766,6.046070,1.484700,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,OFIFO,0.050463,3.398868,1.484700,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,IFIFO,0.053251,3.586651,1.484700,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_8mhz,Control / other,0.003032,0.204216,1.484700,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real3/always_on_8mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,SD,0.505456,49.429386,1.022582,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,SFE,0.079834,7.807100,1.022582,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,WindowBuffer,0.086149,8.424654,1.022582,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,PendingQueue,0.103329,10.104715,1.022582,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,WindowFIFO,0.146191,14.296262,1.022582,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,OFIFO,0.047610,4.655861,1.022582,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,IFIFO,0.051076,4.994807,1.022582,design_1_wrapper/design_1_i/top_0/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,always_on_1mhz,Control / other,0.002937,0.287214,1.022582,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real3/always_on_1mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,SD,0.506919,56.867736,0.891400,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SD,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,SFE,0.010195,1.143707,0.891400,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_SFE,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,WindowBuffer,0.086326,9.684317,0.891400,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowBuffer,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,PendingQueue,0.103727,11.636415,0.891400,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_PendingEventQueue,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,WindowFIFO,0.079171,8.881647,0.891400,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_WindowFIFO,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,OFIFO,0.045830,5.141351,0.891400,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_OFIFO,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,IFIFO,0.053485,6.000112,0.891400,design_1_wrapper/design_1_i/top_1/inst/u_NeuralCore/u_MainPath/u_IFIFO,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt
+real3,event_driven_8mhz,Control / other,0.005747,0.644716,0.891400,WindowController + SFEClockControl + parent-level remainder,results/power/evidence/real3/event_driven_8mhz.zip::audit/modeled_uW.rpt

@@ -1,0 +1,38 @@
+8개체 SD·SFE 품질 평가
+
+입력
+IBL Neuropixels 8개체, 각 16채널, 약 30초.
+공통 전처리: 원본 384채널 Destriping → 16채널 선택 → Whitening → 중첩 SURE Wavelet → 5-tap [1,4,6,4,1]/16 평활화.
+채널별 MAD 잡음 크기를 32로 정규화한다.
+개체·녹음 식별자와 채널 선택: recordings.csv.
+
+SD
+공통 계수는 앞 5개체의 앞 10초에서 선택한다.
+입력별 Whitening·잡음 통계·NEO 평균은 8개체 각각의 앞 10초에서 계산한다.
+T = ceil(63.7258924519 × 학습 구간 NEO 평균), Refractory 63.
+평가 구간: 앞 5개체의 뒤 약 20초, 추가 3개체의 전체 약 30초.
+대조: Reference와 ±16 sample, 파형이 나타나는 채널 범위, 일대일 대응.
+대표 지표: 개체별 F1의 산술평균 53.48%; 앞 5개 53.82%, 추가 3개 52.90%.
+Reference 25,645개, 검출 24,509개, 일대일 일치 13,444개.
+최종 조합은 8개체 비교 결과를 참고해 선택했다. 추가 3개체의 수치는 이 비교 절차에서 관찰한 결과이다.
+sd_evaluation/subject_results.csv: 입력별 Threshold, 검출 수, P/R/F1.
+sd_evaluation/method_comparison.csv: 입력 경로·후단 필터 조합별 결과.
+
+SFE
+같은 전처리를 거친 신호에서 Reference 시각의 앞 32개·해당 sample·뒤 31개로 Window를 구성한다. 평활화 지연 2 sample을 시각에 반영한다.
+각 개체의 앞 10초로 최대 기울기 기준 위치를 학습한다.
+Reference 시각은 학습·평가 Window를 구성하고, Unit ID는 종류별 비교와 채점에 사용한다.
+SVD 5성분과 순차 재구성 오차 감소량으로 채널별 Offset 7개를 선택한다. 위치 선택 점수는 파형 값으로 계산한다.
+후보 Offset은 -32~31이며 학습 파형의 60% 이상에서 Window 안에 있는 위치를 사용한다.
+8개체 모두 뒤 20초에서 5-fold 평가: 80%의 ID별 평균 FIR 파형을 만들고 나머지 20%의 Feature 값과 비교한다.
+평가 파형의 선택 주소에서 Feature와 ID별 평균 파형의 제곱차를 비교하고, 가장 작은 ID를 배정한다.
+뒤 구간 Reference 21,712개 중 종류별 10개 이상·채널당 2종류 이상인 34채널의 13,462개를 평가했다.
+기존 Laplacian 방식 74.98% → 선정 방식 82.47%, +7.49%p.
+정답 수는 10,094개 → 11,102개로 1,008개 증가했다. 동일한 FIR·Feature 수·평가 묶음으로 비교한 결과이다.
+위치 선정 후보의 최종 비교에는 8개체의 평가 결과를 사용했다.
+sfe_evaluation/: 방법·개체별 결과, 평가 수, Feature별 기여.
+선정 Offset: sfe_evaluation/selected_offsets.csv.
+
+FPGA 전력 비교와의 연결
+results/power는 Burst·real1·real2·real3의 보드 검증 설정과 Routed DCP에 대한 결과이다.
+본 8개체 품질 평가는 추가 Python 실험이다. 전처리의 실행 비용과 보드 회로의 전력은 각각의 실험 조건으로 제시한다.

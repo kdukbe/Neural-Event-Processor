@@ -1,0 +1,39 @@
+NeuralCore / SFE 전력 비교
+
+검사 완료: 12/12
+
+단위 mW. 실제 보드 구현 DCP와 SAIF 기반 동적 전력 추정.
+Event-driven은 SAIF의 실제 클럭 전달 횟수를 반영한 평균 클럭 모델.
+전력 분석 방법: docs/Neural_Event_Processor_Report.pdf
+
+데이터  시스템                Core(mW)     SFE(mW)    클럭전달(%)  Golden
+burst  always_on_8mhz         1.548411    0.610257   100.00000  504 PASS
+burst  event_driven_8mhz      0.982464    0.077426     5.29621  504 PASS
+burst  always_on_1mhz         1.097132    0.120723   100.00000  504 PASS
+real1  always_on_8mhz         1.483803    0.569566   100.00000  852 PASS
+real1  event_driven_8mhz      0.890357    0.009914     0.68293  852 PASS
+real1  always_on_1mhz         1.021594    0.079652   100.00000  852 PASS
+real2  always_on_8mhz         1.478659    0.567042   100.00000  472 PASS
+real2  event_driven_8mhz      0.883389    0.005595     0.37359  472 PASS
+real2  always_on_1mhz         1.015811    0.077116   100.00000  472 PASS
+real3  always_on_8mhz         1.484700     0.56974   100.00000  878 PASS
+real3  event_driven_8mhz      0.891400    0.010195     0.70064  878 PASS
+real3  always_on_1mhz         1.022582    0.079834   100.00000  878 PASS
+
+감소율: 양수는 Event-driven 전력이 더 낮음을 뜻함.
+burst core: vs AO8 +36.55% / vs AO1 +10.45%
+burst sfe: vs AO8 +87.31% / vs AO1 +35.86%
+real1 core: vs AO8 +39.99% / vs AO1 +12.85%
+real1 sfe: vs AO8 +98.26% / vs AO1 +87.55%
+real2 core: vs AO8 +40.26% / vs AO1 +13.04%
+real2 sfe: vs AO8 +99.01% / vs AO1 +92.74%
+real3 core: vs AO8 +39.96% / vs AO1 +12.83%
+real3 sfe: vs AO8 +98.21% / vs AO1 +87.23%
+
+Core 자원: LUT / FF / BRAM / DSP (실제 보드 배치 결과의 해당 hierarchy)
+always_on_8mhz: 2568.0 / 4470.0 / 0.5 / 2.0
+event_driven_8mhz: 2572.0 / 4477.0 / 0.5 / 2.0
+always_on_1mhz: 2818.0 / 4504.0 / 0.5 / 2.0
+
+원본 자료: results/power/evidence/<데이터>/<구조>.zip (새 실행은 같은 이름의 폴더)
+재현 코드: verification/power

@@ -1,0 +1,308 @@
+{
+  "systems": {
+    "always_on_8mhz": {
+      "dcp": "results/implementation/always_on_8mhz/routed.dcp",
+      "dcp_sha256": "9974f37c9ee95f44f44327bc33dafcb29c709adf5995ace90d792c1aeb7fbaaa",
+      "capture_manifest": "results/implementation/always_on_8mhz/capture_manifest.json",
+      "ip_scope": "design_1_i/top_1",
+      "core_scope": "design_1_i/top_1/inst/u_NeuralCore",
+      "axi_mhz": 100,
+      "sample_mhz": 0.4,
+      "main_mhz": 13.333333333333334,
+      "sfe_mhz": 8,
+      "event_driven": false,
+      "fifo": {
+        "ififo": 4,
+        "pending": 16,
+        "ofifo": 8,
+        "window": 512
+      },
+      "rtl_hashes": {
+        "HW\\rtl\\interface\\controller.v": "e5d57e36cb58870145089d0392c6afb78c08dc8b054a573cc436cc0b8f781289",
+        "HW\\rtl\\interface\\FIFO.v": "78a4d35ffe2428ae65a885839c9f0f3380a563612306e8f0e0b22c92e1145335",
+        "HW\\rtl\\interface\\IBuffer.v": "511df00fc820aaf1edf9589fbb246fb00b0a313da3cd7e05dd0d396cca8b8537",
+        "HW\\rtl\\interface\\NeuralCore.v": "7ec0e7d854b78def66babd7464a7b98dd658ea2834446c63bc1a51e319244773",
+        "HW\\rtl\\interface\\OBuffer.v": "0c01b2e22430035a4aab6f237ee9b1a23aefc0ea79877f6f472eea5b62121dc3",
+        "HW\\rtl\\interface\\rdma.v": "05806ecdb342c135a6d9f24b90fd264b8dff135bce7616dd20cd19969908c2b3",
+        "HW\\rtl\\interface\\top.v": "ed6906b15a56417a50173d7e194b6f14880bec40d798e1caa4da0219eb76b128",
+        "HW\\rtl\\interface\\wdma.v": "f02b2ea4649565c59695e384d2dbdf26c1702ca025cd068bbaaab8ddd2fbdb19",
+        "HW\\rtl\\mainpath\\AFIFO.v": "c05c4bece588de7714a2e6a00bfff7d68426fc85f9a084462aaa5f36f4c1065c",
+        "HW\\rtl\\mainpath\\IFIFO.v": "ea17251aeb83fa1957bb83c8b89170400265838bbf9936dffb4d8f70deb83e17",
+        "HW\\rtl\\mainpath\\MainPath.v": "40e11610ff4691c3eb5e4ced2101e408e6bbbf3d5c17b086933b87676f7b1cd0",
+        "HW\\rtl\\mainpath\\OFIFO.v": "455d8248c5cbe3671daea6111bfa59883fab3a4c89ba898b9cc09762bc55698f",
+        "HW\\rtl\\mainpath\\PendingEventQueue.v": "e8e0038f2217ad8dc8ad2f160b660eaad3d6b894275ca90c85402cf3499210ed",
+        "HW\\rtl\\mainpath\\SD.v": "7393f213950c32c7cdff61ee5038174b035b076d7f2c7bcb440e432c435880b1",
+        "HW\\rtl\\mainpath\\SD_RB.v": "871d77b6f4d82f8bcdef9e8d62118d8ae4bdf6bd19a43d9e6ab6b4c6a66fde03",
+        "HW\\rtl\\mainpath\\SFE.v": "6ab1b6644ec5b1f72728d622e6f4d0c1e3837422afc7da0fa2757d56b10ae19b",
+        "HW\\rtl\\mainpath\\SFEClockControl.v": "2b354e5c27577c68d318bcfa42755a76d5b3145d031722b12a136d7b23606552",
+        "HW\\rtl\\mainpath\\WindowBuffer.v": "3e8f26b1558fd53e63e9becfbb63a1ab94b5eced41b876449c8f6bfd42bf954f",
+        "HW\\rtl\\mainpath\\WindowController.v": "92c7e5647470da6088806891dcfe649b279fe08390ccbb8f1deac33cda8053ca",
+        "HW\\rtl\\mainpath\\WindowFIFO.v": "b934702318e8da9bf35bcfaf4c1c638c430a6dc0949460c70e70de76b8692103",
+        "HW\\rtl\\MainPathSynthWrapper.v": "a00bd8f0f060644255341bc6ddb709bb62369eadb05fe020c6bd4679aad69154"
+      },
+      "software_sha256": {
+        "software\\threshold_config\\burst\\neural_data.c": "1b3616a78b57c66906be398d1cfa42b344a9ce3b213ceecfb93f8dd91bab9a24",
+        "software\\threshold_config\\burst\\neural_data.h": "64b169807608bbe0363164a07a80fa0fa21f1aa2f206b062ee25041e0617e72a",
+        "software\\threshold_config\\main.c": "3684ecd583ae7a23994e401b629b71e87a3d959b131a4951367de7eb4981e1ca",
+        "software\\threshold_config\\real1\\neural_data.c": "429392d7c304415cfc011d66b6f2be80fc8ca64398a552d6ef84280e4d12f022",
+        "software\\threshold_config\\real1\\neural_data.h": "012e3a92089d1a2118a65217a8ae91a4749af895bfee0f48b5f53792feeae9d3",
+        "software\\threshold_config\\real2\\neural_data.c": "4faf4766c00ce9b008d27199c827c32647aa387f5f0cb18ca581c9ed33a443dd",
+        "software\\threshold_config\\real2\\neural_data.h": "fc78604e0d0326e426d8ee92e8a0ebb11f47448c5dbab80747d69815dff4e48f",
+        "software\\threshold_config\\real3\\neural_data.c": "e7add9dffe092fcbe6e91a5760c97960e64cf9ae419221ae111a82c52e4f1e01",
+        "software\\threshold_config\\real3\\neural_data.h": "816efdcc0603b95cf1a406781537a546d2676b9715914bb52af1a99933f02962"
+      }
+    },
+    "event_driven_8mhz": {
+      "dcp": "results/implementation/event_driven_8mhz/routed.dcp",
+      "dcp_sha256": "e5511faff7e85c0cb8880373585776c430f681fcccc8645b113f7f3ac68fd3c6",
+      "capture_manifest": "results/implementation/event_driven_8mhz/capture_manifest.json",
+      "ip_scope": "design_1_i/top_1",
+      "core_scope": "design_1_i/top_1/inst/u_NeuralCore",
+      "axi_mhz": 100,
+      "sample_mhz": 0.4,
+      "main_mhz": 13.333333333333334,
+      "sfe_mhz": 8,
+      "event_driven": true,
+      "fifo": {
+        "ififo": 4,
+        "pending": 16,
+        "ofifo": 8,
+        "window": 512
+      },
+      "rtl_hashes": {
+        "HW\\rtl\\interface\\controller.v": "e5d57e36cb58870145089d0392c6afb78c08dc8b054a573cc436cc0b8f781289",
+        "HW\\rtl\\interface\\FIFO.v": "78a4d35ffe2428ae65a885839c9f0f3380a563612306e8f0e0b22c92e1145335",
+        "HW\\rtl\\interface\\IBuffer.v": "511df00fc820aaf1edf9589fbb246fb00b0a313da3cd7e05dd0d396cca8b8537",
+        "HW\\rtl\\interface\\NeuralCore.v": "f1a79f9b5650a0aea8ec674b01ddb3e896d9b83fa68b946303a11e4672802b4e",
+        "HW\\rtl\\interface\\OBuffer.v": "0c01b2e22430035a4aab6f237ee9b1a23aefc0ea79877f6f472eea5b62121dc3",
+        "HW\\rtl\\interface\\rdma.v": "05806ecdb342c135a6d9f24b90fd264b8dff135bce7616dd20cd19969908c2b3",
+        "HW\\rtl\\interface\\top.v": "8df43cdf1fb6f63537f9accab6f5cb52135faeb7e8be6da2c22db72c67a0e4fe",
+        "HW\\rtl\\interface\\wdma.v": "f02b2ea4649565c59695e384d2dbdf26c1702ca025cd068bbaaab8ddd2fbdb19",
+        "HW\\rtl\\mainpath\\AFIFO.v": "c05c4bece588de7714a2e6a00bfff7d68426fc85f9a084462aaa5f36f4c1065c",
+        "HW\\rtl\\mainpath\\IFIFO.v": "ea17251aeb83fa1957bb83c8b89170400265838bbf9936dffb4d8f70deb83e17",
+        "HW\\rtl\\mainpath\\MainPath.v": "46df8ed079a22b70c767afa615b4da623e6075f5726ac25e5d6673b3a64acd34",
+        "HW\\rtl\\mainpath\\OFIFO.v": "455d8248c5cbe3671daea6111bfa59883fab3a4c89ba898b9cc09762bc55698f",
+        "HW\\rtl\\mainpath\\PendingEventQueue.v": "e8e0038f2217ad8dc8ad2f160b660eaad3d6b894275ca90c85402cf3499210ed",
+        "HW\\rtl\\mainpath\\SD.v": "7393f213950c32c7cdff61ee5038174b035b076d7f2c7bcb440e432c435880b1",
+        "HW\\rtl\\mainpath\\SD_RB.v": "871d77b6f4d82f8bcdef9e8d62118d8ae4bdf6bd19a43d9e6ab6b4c6a66fde03",
+        "HW\\rtl\\mainpath\\SFE.v": "6ab1b6644ec5b1f72728d622e6f4d0c1e3837422afc7da0fa2757d56b10ae19b",
+        "HW\\rtl\\mainpath\\SFEClockControl.v": "2b354e5c27577c68d318bcfa42755a76d5b3145d031722b12a136d7b23606552",
+        "HW\\rtl\\mainpath\\WindowBuffer.v": "3e8f26b1558fd53e63e9becfbb63a1ab94b5eced41b876449c8f6bfd42bf954f",
+        "HW\\rtl\\mainpath\\WindowController.v": "92c7e5647470da6088806891dcfe649b279fe08390ccbb8f1deac33cda8053ca",
+        "HW\\rtl\\mainpath\\WindowFIFO.v": "b934702318e8da9bf35bcfaf4c1c638c430a6dc0949460c70e70de76b8692103",
+        "HW\\rtl\\MainPathSynthWrapper.v": "b30bbcc5be5819fb0c9f08e3421168d767dd19e252aeabe1cc179cc62d46112c"
+      },
+      "software_sha256": {
+        "software\\threshold_config\\burst\\neural_data.c": "1b3616a78b57c66906be398d1cfa42b344a9ce3b213ceecfb93f8dd91bab9a24",
+        "software\\threshold_config\\burst\\neural_data.h": "64b169807608bbe0363164a07a80fa0fa21f1aa2f206b062ee25041e0617e72a",
+        "software\\threshold_config\\main.c": "3684ecd583ae7a23994e401b629b71e87a3d959b131a4951367de7eb4981e1ca",
+        "software\\threshold_config\\real1\\neural_data.c": "429392d7c304415cfc011d66b6f2be80fc8ca64398a552d6ef84280e4d12f022",
+        "software\\threshold_config\\real1\\neural_data.h": "012e3a92089d1a2118a65217a8ae91a4749af895bfee0f48b5f53792feeae9d3",
+        "software\\threshold_config\\real2\\neural_data.c": "4faf4766c00ce9b008d27199c827c32647aa387f5f0cb18ca581c9ed33a443dd",
+        "software\\threshold_config\\real2\\neural_data.h": "fc78604e0d0326e426d8ee92e8a0ebb11f47448c5dbab80747d69815dff4e48f",
+        "software\\threshold_config\\real3\\neural_data.c": "e7add9dffe092fcbe6e91a5760c97960e64cf9ae419221ae111a82c52e4f1e01",
+        "software\\threshold_config\\real3\\neural_data.h": "816efdcc0603b95cf1a406781537a546d2676b9715914bb52af1a99933f02962"
+      }
+    },
+    "always_on_1mhz": {
+      "dcp": "results/implementation/always_on_1mhz/routed.dcp",
+      "dcp_sha256": "3c23c4c3e1b786eb271eec166cbab37af95fb160fdf4f47013ee2837a5d6fd0a",
+      "capture_manifest": "results/implementation/always_on_1mhz/capture_manifest.json",
+      "ip_scope": "design_1_i/top_0",
+      "core_scope": "design_1_i/top_0/inst/u_NeuralCore",
+      "axi_mhz": 100,
+      "sample_mhz": 0.4,
+      "main_mhz": 13.333333333333334,
+      "sfe_mhz": 1,
+      "event_driven": false,
+      "fifo": {
+        "ififo": 4,
+        "pending": 16,
+        "ofifo": 16,
+        "window": 1024
+      },
+      "rtl_hashes": {
+        "HW\\rtl\\interface\\controller.v": "e5d57e36cb58870145089d0392c6afb78c08dc8b054a573cc436cc0b8f781289",
+        "HW\\rtl\\interface\\FIFO.v": "78a4d35ffe2428ae65a885839c9f0f3380a563612306e8f0e0b22c92e1145335",
+        "HW\\rtl\\interface\\IBuffer.v": "511df00fc820aaf1edf9589fbb246fb00b0a313da3cd7e05dd0d396cca8b8537",
+        "HW\\rtl\\interface\\NeuralCore.v": "bcf78f4b154c1384d192459a10696ff66b60264b876e2266f98134f53323681f",
+        "HW\\rtl\\interface\\OBuffer.v": "0c01b2e22430035a4aab6f237ee9b1a23aefc0ea79877f6f472eea5b62121dc3",
+        "HW\\rtl\\interface\\rdma.v": "05806ecdb342c135a6d9f24b90fd264b8dff135bce7616dd20cd19969908c2b3",
+        "HW\\rtl\\interface\\top.v": "4739dff4fe73f0fdee4891a99274cb94f9084e02c5c566397f3906a68e47e92f",
+        "HW\\rtl\\interface\\wdma.v": "f02b2ea4649565c59695e384d2dbdf26c1702ca025cd068bbaaab8ddd2fbdb19",
+        "HW\\rtl\\mainpath\\AFIFO.v": "c05c4bece588de7714a2e6a00bfff7d68426fc85f9a084462aaa5f36f4c1065c",
+        "HW\\rtl\\mainpath\\IFIFO.v": "ea17251aeb83fa1957bb83c8b89170400265838bbf9936dffb4d8f70deb83e17",
+        "HW\\rtl\\mainpath\\MainPath.v": "ef27bf5018385e276818976792cdfcc855fd59833a5c2a183a3ca2ace1b3678e",
+        "HW\\rtl\\mainpath\\OFIFO.v": "455d8248c5cbe3671daea6111bfa59883fab3a4c89ba898b9cc09762bc55698f",
+        "HW\\rtl\\mainpath\\PendingEventQueue.v": "e8e0038f2217ad8dc8ad2f160b660eaad3d6b894275ca90c85402cf3499210ed",
+        "HW\\rtl\\mainpath\\SD.v": "7393f213950c32c7cdff61ee5038174b035b076d7f2c7bcb440e432c435880b1",
+        "HW\\rtl\\mainpath\\SD_RB.v": "871d77b6f4d82f8bcdef9e8d62118d8ae4bdf6bd19a43d9e6ab6b4c6a66fde03",
+        "HW\\rtl\\mainpath\\SFE.v": "6ab1b6644ec5b1f72728d622e6f4d0c1e3837422afc7da0fa2757d56b10ae19b",
+        "HW\\rtl\\mainpath\\SFEClockControl.v": "2b354e5c27577c68d318bcfa42755a76d5b3145d031722b12a136d7b23606552",
+        "HW\\rtl\\mainpath\\WindowBuffer.v": "3e8f26b1558fd53e63e9becfbb63a1ab94b5eced41b876449c8f6bfd42bf954f",
+        "HW\\rtl\\mainpath\\WindowController.v": "92c7e5647470da6088806891dcfe649b279fe08390ccbb8f1deac33cda8053ca",
+        "HW\\rtl\\mainpath\\WindowFIFO.v": "b934702318e8da9bf35bcfaf4c1c638c430a6dc0949460c70e70de76b8692103",
+        "HW\\rtl\\MainPathSynthWrapper.v": "38424131c002ff552cb1c7c40931a1f572f5b97d1f3278fac95f9e55bcb80f26"
+      },
+      "software_sha256": {
+        "software\\threshold_config\\burst\\neural_data.c": "1b3616a78b57c66906be398d1cfa42b344a9ce3b213ceecfb93f8dd91bab9a24",
+        "software\\threshold_config\\burst\\neural_data.h": "64b169807608bbe0363164a07a80fa0fa21f1aa2f206b062ee25041e0617e72a",
+        "software\\threshold_config\\main.c": "3684ecd583ae7a23994e401b629b71e87a3d959b131a4951367de7eb4981e1ca",
+        "software\\threshold_config\\real1\\neural_data.c": "429392d7c304415cfc011d66b6f2be80fc8ca64398a552d6ef84280e4d12f022",
+        "software\\threshold_config\\real1\\neural_data.h": "012e3a92089d1a2118a65217a8ae91a4749af895bfee0f48b5f53792feeae9d3",
+        "software\\threshold_config\\real2\\neural_data.c": "4faf4766c00ce9b008d27199c827c32647aa387f5f0cb18ca581c9ed33a443dd",
+        "software\\threshold_config\\real2\\neural_data.h": "fc78604e0d0326e426d8ee92e8a0ebb11f47448c5dbab80747d69815dff4e48f",
+        "software\\threshold_config\\real3\\neural_data.c": "e7add9dffe092fcbe6e91a5760c97960e64cf9ae419221ae111a82c52e4f1e01",
+        "software\\threshold_config\\real3\\neural_data.h": "816efdcc0603b95cf1a406781537a546d2676b9715914bb52af1a99933f02962"
+      }
+    }
+  },
+  "workloads": {
+    "burst": {
+      "threshold": 24962,
+      "input_rows": 33280,
+      "expected_events": 504,
+      "output_capacity": 544,
+      "policy": "Preserved class-based synthetic workload",
+      "source_input": "data/recordings/burst/input.csv",
+      "source_input_sha256": "58171ae51e0cc393466aa4e15e3400673842a045d9268ad446c9879bc18a2a55",
+      "data_dir": "data/prepared/burst",
+      "input_half_period_ns": 1250.0,
+      "replay_sample_hz_per_channel": 25000,
+      "observation_ns": 85200000,
+      "observation_note": "Same input replay plus fixed 2 ms drain/idle interval for all three systems; excludes initial configuration",
+      "file_sha256": {
+        "feature.hex": "af6bdf88044f5e0238cdf8f019ff0d2aa6602f54560d94e886ad352c40fc4e41",
+        "golden.hex": "e993b9182ef95041a4ed3256329207bccbb935ca18de97579281a48b78c9d8e7",
+        "input.hex": "ae47c347b085cd4cf770e3db7bc7bcc50b8c2d7c8cbba6138a0ab55dbdffc3a3",
+        "mainpath_golden.csv": "f6d9be8a9901e66a1173ecc06b75096bc22e24b131c11896ade12e9889199db8",
+        "metadata.json": "fa38d331432247e5d26c3a74f97c22e75643603d70a73a1c1b1da751fb867fe7",
+        "sd_threshold.csv": "8c22f0f3ff5bc4daa2d577c89f8b55e4b72faff110c44fea837829ca70ad621e",
+        "sfe_feature.csv": "9718b464c73057c5f639d8a1e3f7a418bb8e4aa05b5011c6a7732a5c2ef07063"
+      },
+      "original_metadata_sha256": "c25e19f3223487c5837c79828a3d662ab29be1268023123056fcd190fb231bbd"
+    },
+    "real1": {
+      "threshold": 1108,
+      "input_rows": 480512,
+      "expected_events": 852,
+      "output_capacity": 7536,
+      "policy": "Sample-only real-data training",
+      "source_input": "data/recordings/real1/input.csv",
+      "source_input_sha256": "37a42b0423b2f53f2ff891a1680cf69f49db12126b29c07601b47098ff42818e",
+      "data_dir": "data/prepared/real1",
+      "input_half_period_ns": 1250.0,
+      "replay_sample_hz_per_channel": 25000,
+      "observation_ns": 1203280000,
+      "observation_note": "Same input replay plus fixed 2 ms drain/idle interval for all three systems; excludes initial configuration",
+      "file_sha256": {
+        "feature.hex": "da7bbdb505a66e8dd5d30534f53693348c7d9f1162640ec6791eb8585d1d2a62",
+        "golden.hex": "c00b68a8a297ec1b02cdf3f86696a943830b653743b5d7dc7081a0398004a4b7",
+        "input.hex": "a4df9677ec302ee05d84f7eb8e964ffe96edc300350082a5a3b4c282ff88ecc8",
+        "mainpath_golden.csv": "abf2d818c377cfdbcb70499f8bcab23c7ba40731eb6e788ceb08e737d511235b",
+        "metadata.json": "8c6f4265e9678692ecd37179eae677fe06830cf7ffffd74aa0a84bd035283601",
+        "sd_threshold.csv": "55ba77ac8072ca403c62d717fecbcd6e535bd2be6f3859d3120ffd58a3260446",
+        "sfe_feature.csv": "32ee28b12e6853b3b150d1eb27097232fb4291c39b5dbfb74918d1e6544dad3f"
+      },
+      "original_metadata_sha256": "6907ade265a59434dd9722477f97152dbbf235991b1de4eea131171c1984d8bf"
+    },
+    "real2": {
+      "threshold": 1508,
+      "input_rows": 480512,
+      "expected_events": 472,
+      "output_capacity": 7536,
+      "policy": "Sample-only real-data training",
+      "source_input": "data/recordings/real2/input.csv",
+      "source_input_sha256": "b9b5f1dc174321d37d08fb64771d31bc523178564b9b224d18d5dbe49f008ac3",
+      "data_dir": "data/prepared/real2",
+      "input_half_period_ns": 1250.0,
+      "replay_sample_hz_per_channel": 25000,
+      "observation_ns": 1203280000,
+      "observation_note": "Same input replay plus fixed 2 ms drain/idle interval for all three systems; excludes initial configuration",
+      "file_sha256": {
+        "feature.hex": "5de6e5f0c3f600d1825a256baa77bda8ae8ab245caef7d1225be0139fadfeeb8",
+        "golden.hex": "e550a5773fa3269333896eb4cdb95fdfb666e95850a0901cf04c1851afb5f336",
+        "input.hex": "3b8cf732d367b71e6c91a98c50d503d0508e03457f4667ebb7e554ee666a85ba",
+        "mainpath_golden.csv": "58d42e6a0d0cf9ea60a5e88e96f6b24dba13fea50320b7a86449597bbd9e67f4",
+        "metadata.json": "91db91063fb6bbbf19742f763333ea8dd113596907791821edc77a2cfff350c4",
+        "sd_threshold.csv": "6539df4c73201d768e26e4014790bcb589a035fd0f7c70edb265ebf4d57f2f8c",
+        "sfe_feature.csv": "ea2f86641fd4f12700e5955aa8625173cb4aafad3bf65ebf7d11a7f25be70d20"
+      },
+      "original_metadata_sha256": "97a7af93423899e0462dad2f9fda8dea4a543e8794a820469e7eef1dbd07a04f"
+    },
+    "real3": {
+      "threshold": 1970,
+      "input_rows": 480512,
+      "expected_events": 878,
+      "output_capacity": 7536,
+      "policy": "Sample-only real-data training",
+      "source_input": "data/recordings/real3/input.csv",
+      "source_input_sha256": "6527e427e1117cfc909a1dcb2ddc28676ec59feba2e9f580147c56e514acc08a",
+      "data_dir": "data/prepared/real3",
+      "input_half_period_ns": 1250.0,
+      "replay_sample_hz_per_channel": 25000,
+      "observation_ns": 1203280000,
+      "observation_note": "Same input replay plus fixed 2 ms drain/idle interval for all three systems; excludes initial configuration",
+      "file_sha256": {
+        "feature.hex": "85513fd6f5d02c3ea56fd43ba04b9ebff0ab772bb2f69b1972d77438d34b5221",
+        "golden.hex": "829ae13ba4c83d23bef85df75dfb31b9402b97ec3ad35f45d467d6c89e85e1ab",
+        "input.hex": "b04e9412cb6ff94a73a5eb14be7ae5ad2c30ba01ab309b632dc313fc7caebab3",
+        "mainpath_golden.csv": "82f1e8a820d501d85caca2acea3f895583644d5bc1bf724b6423d094ec703cf3",
+        "metadata.json": "630f581970229f9b88bc59e5d0e013252591f59a55b094c1a800f28a6141dc8e",
+        "sd_threshold.csv": "b063aed781f9ea65a7864f5548128bcc082f2b9659b57f367ad482a81ae4adad",
+        "sfe_feature.csv": "773ac35875b3cc51cb795e036456245ab7f992d42092a7a54ad9b4e85bec86f7"
+      },
+      "original_metadata_sha256": "8fe263dd08c7fc11bb876e4412194e7ce211da6bc27a93500987ba26256ca48c"
+    }
+  },
+  "jobs": [
+    {
+      "system": "always_on_8mhz",
+      "dataset": "burst"
+    },
+    {
+      "system": "always_on_8mhz",
+      "dataset": "real1"
+    },
+    {
+      "system": "always_on_8mhz",
+      "dataset": "real2"
+    },
+    {
+      "system": "always_on_8mhz",
+      "dataset": "real3"
+    },
+    {
+      "system": "event_driven_8mhz",
+      "dataset": "burst"
+    },
+    {
+      "system": "event_driven_8mhz",
+      "dataset": "real1"
+    },
+    {
+      "system": "event_driven_8mhz",
+      "dataset": "real2"
+    },
+    {
+      "system": "event_driven_8mhz",
+      "dataset": "real3"
+    },
+    {
+      "system": "always_on_1mhz",
+      "dataset": "burst"
+    },
+    {
+      "system": "always_on_1mhz",
+      "dataset": "real1"
+    },
+    {
+      "system": "always_on_1mhz",
+      "dataset": "real2"
+    },
+    {
+      "system": "always_on_1mhz",
+      "dataset": "real3"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+RTL 시스템 검증
+
+Clock: AXI 100 / Input 0.4 / Main 13.333 MHz
+FIFO 순서: IFIFO / PendingQueue / OFIFO / WindowFIFO
+최대 점유 순서: PendingQueue / OFIFO / WindowFIFO
+
+구조                   데이터  Threshold   Input   Event  Drop  최대 점유       결과
+always_on_8mhz         burst      24962   33280   504     0  16/7/481    PASS
+always_on_8mhz         real1       1108  480512   852     0  12/2/177    PASS
+always_on_8mhz         real2       1508  480512   472     0  11/3/231    PASS
+always_on_8mhz         real3       1970  480512   878     0  15/5/383    PASS
+event_driven_8mhz      burst      24962   33280   504     0  16/7/484    PASS
+event_driven_8mhz      real1       1108  480512   852     0  12/2/180    PASS
+event_driven_8mhz      real2       1508  480512   472     0  11/3/234    PASS
+event_driven_8mhz      real3       1970  480512   878     0  15/5/384    PASS
+always_on_1mhz         burst      24962   33280   504     0  16/14/959    PASS
+always_on_1mhz         real1       1108  480512   852     0  12/7/508    PASS
+always_on_1mhz         real2       1508  480512   472     0  11/8/521    PASS
+always_on_1mhz         real3       1970  480512   878     0  15/13/832    PASS
+
+Always-on 8 MHz / Event-driven 8 MHz: FIFO 4/16/8/512
+Always-on 1 MHz: FIFO 4/16/16/1024
+검증 범위: AXI 설정 → RDMA → NeuralCore → WDMA → Python Golden 비교
+실행 원본: runs.zip의 <구조>/<데이터>.log 및 .json
+실제 Board 실행: ../board의 세 Burst 로그

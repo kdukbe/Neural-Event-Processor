@@ -1,0 +1,19 @@
+﻿point,main_mhz,sfe_mhz,golden,error_count,drop,max_ififo,max_pending,max_ofifo,max_wfifo_samples,dynamic_mw,static_mw,total_mw,wns_ns,power_design_fifo,measurement_fifo
+w512_main30_sfe10,30,10,PASS,0,0,2,16,10,688,9.074,104.529,113.602,9.242,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main20_sfe10,20,10,PASS,0,0,2,16,8,574,7.068,104.501,111.568,25.909,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main16_sfe10,16,10,PASS,0,0,2,16,7,455,6.267,104.488,110.755,38.409,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main15_sfe10,15,10,PASS,0,0,2,16,6,421,6.071,104.487,110.558,42.576,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main14_sfe10,14,10,PASS,0,0,2,16,5,380,5.871,104.483,110.354,47.338,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe10,13,10,PASS,0,0,2,16,5,325,5.671,104.478,110.15,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main12_sfe10,12,10,FAIL,48,0,2,16,4,267,5.474,104.477,109.951,59.242,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe20,13,20,PASS,0,0,2,16,1,64,8.796,104.525,113.32,31.162,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe15,13,15,PASS,0,0,2,16,1,64,7.229,104.502,111.731,47.829,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe8,13,8,PASS,0,0,2,16,7,465,5.057,104.471,109.527,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe6,13,6,PASS,0,0,2,16,9,606,4.446,104.462,108.908,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe5,13,5,PASS,0,0,2,16,10,676,4.142,104.459,108.601,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe2,13,2,PASS,0,0,2,16,13,886,3.231,104.445,107.676,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe1,13,1,PASS,0,0,2,16,14,957,2.931,104.441,107.371,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe0.5,13,0.5,PASS,0,0,2,16,15,989,2.778,104.439,107.217,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe0.45,13,0.45,PASS,0,0,2,16,15,992,2.763,104.438,107.201,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe0.4,13,0.4,PASS,0,0,2,16,64,4125,2.749,104.438,107.187,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples
+w512_main13_sfe0.25,13,0.25,PASS,0,0,2,16,232,14865,2.703,104.438,107.141,52.832,Pending 16 / OFIFO 8 / WindowFIFO 512 samples,Pending 512 / OFIFO 512 / WindowFIFO 32768 samples

@@ -1,0 +1,9 @@
+﻿step,lut,ff
+01_input_clock_split,6785,5985
+02_fir_width_shiftadd,4865,4921
+03_fir_pipeline_reduction,4849,4798
+04_feature_read_4_3,4052,4922
+05_feature_read_2_2_2_1,3374,4922
+06_sfe_register_reduction,3375,4838
+07_pending_counter_16bit,3120,4582
+08_pending_counter_8bit,2990,4454

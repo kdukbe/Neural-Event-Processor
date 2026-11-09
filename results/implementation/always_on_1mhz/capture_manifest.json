@@ -1,0 +1,26 @@
+{
+  "architecture": "always_on_1mhz",
+  "captured_at": "2026-09-09T14:11:22.1701087+09:00",
+  "files": [
+    {
+      "path": "results/implementation/always_on_1mhz/routed.dcp",
+      "sha256": "3c23c4c3e1b786eb271eec166cbab37af95fb160fdf4f47013ee2837a5d6fd0a"
+    },
+    {
+      "path": "comparisons/always_on_1mhz/xsa/always_on_1mhz.xsa",
+      "sha256": "80a568df06420b46c7126b4ab1f6b1da176281d69ba7990aa5eb0cd56706a9d0"
+    },
+    {
+      "path": "results/implementation/always_on_1mhz/design_1_wrapper_power_routed.rpt",
+      "sha256": "20da6a2d43cf5d6427b435bd76630b9c4b0f90ccc96a8dadce438373b12d2c06"
+    },
+    {
+      "path": "results/implementation/always_on_1mhz/design_1_wrapper_timing_summary_routed.rpt",
+      "sha256": "fa0760b573987d115976effc912cc157192cfa11f004fef690f87712f278b272"
+    },
+    {
+      "path": "results/implementation/always_on_1mhz/design_1_wrapper_utilization_placed.rpt",
+      "sha256": "f6da90518559290b33167bf7218d14a15a6b9fd40198cc5425c32ab174a62246"
+    }
+  ]
+}

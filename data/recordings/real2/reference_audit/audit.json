@@ -1,0 +1,143 @@
+{
+  "dataset": "real2",
+  "source_datasets": {
+    "times": {
+      "url": "https://openalyx.internationalbrainlab.org/datasets/517fbe41-134e-48f3-96aa-0eeeeb86d384",
+      "name": "spikes.times.npy",
+      "created_by": "12da3001",
+      "created_datetime": "2024-05-14T17:32:10.032457",
+      "dataset_type": "spikes.times",
+      "data_format": "npy",
+      "collection": "alf/probe01/pykilosort",
+      "session": "https://openalyx.internationalbrainlab.org/sessions/ff48aa1d-ef30-4903-ac34-8c41b738c1b9",
+      "file_size": 282319328,
+      "hash": "b6ce4a537411f881e70e8e44ae2374d0",
+      "version": "2.35.0",
+      "experiment_number": 1,
+      "file_records": [
+        {
+          "id": "0881adaa-a511-4f79-8078-bcdac2a62553",
+          "data_repository": "aws_zadorlab",
+          "data_repository_path": "data/zadorlab/Subjects/",
+          "relative_path": "CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.times.npy",
+          "data_url": "https://ibl-brain-wide-map-public.s3.amazonaws.com/data/zadorlab/Subjects/CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.times.517fbe41-134e-48f3-96aa-0eeeeb86d384.npy",
+          "exists": true
+        },
+        {
+          "id": "87eb64d3-7fe4-40f8-8ee7-541599b0d489",
+          "data_repository": "flatiron_zadorlab",
+          "data_repository_path": "/zadorlab/Subjects/",
+          "relative_path": "CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.times.npy",
+          "data_url": "https://ibl.flatironinstitute.org/public/zadorlab/Subjects/CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.times.517fbe41-134e-48f3-96aa-0eeeeb86d384.npy",
+          "exists": true
+        }
+      ],
+      "auto_datetime": "2025-02-18T18:13:36.678855",
+      "revision": "2024-05-06",
+      "default_dataset": true,
+      "tags": [
+        "2024_Q2_IBL_et_al_BWM_iblsort",
+        "Brainwidemap"
+      ],
+      "qc": "NOT_SET",
+      "json": null
+    },
+    "samples": {
+      "url": "https://openalyx.internationalbrainlab.org/datasets/0eb18c28-ede0-4be8-aca9-71e55859abf8",
+      "name": "spikes.samples.npy",
+      "created_by": "12da3001",
+      "created_datetime": "2024-05-14T17:32:08.439420",
+      "dataset_type": "spikes.samples",
+      "data_format": "npy",
+      "collection": "alf/probe01/pykilosort",
+      "session": "https://openalyx.internationalbrainlab.org/sessions/ff48aa1d-ef30-4903-ac34-8c41b738c1b9",
+      "file_size": 282319328,
+      "hash": "fc871bc2501b80be0d45d5a4ef61b594",
+      "version": "2.35.0",
+      "experiment_number": 1,
+      "file_records": [
+        {
+          "id": "0b9615b4-f3f5-470e-8c96-27ebee696afe",
+          "data_repository": "aws_zadorlab",
+          "data_repository_path": "data/zadorlab/Subjects/",
+          "relative_path": "CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.samples.npy",
+          "data_url": "https://ibl-brain-wide-map-public.s3.amazonaws.com/data/zadorlab/Subjects/CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.samples.0eb18c28-ede0-4be8-aca9-71e55859abf8.npy",
+          "exists": true
+        },
+        {
+          "id": "b9527e71-b207-4bd4-8673-b7af49d71914",
+          "data_repository": "flatiron_zadorlab",
+          "data_repository_path": "/zadorlab/Subjects/",
+          "relative_path": "CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.samples.npy",
+          "data_url": "https://ibl.flatironinstitute.org/public/zadorlab/Subjects/CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.samples.0eb18c28-ede0-4be8-aca9-71e55859abf8.npy",
+          "exists": true
+        }
+      ],
+      "auto_datetime": "2025-02-18T18:13:36.678855",
+      "revision": "2024-05-06",
+      "default_dataset": true,
+      "tags": [
+        "2024_Q2_IBL_et_al_BWM_iblsort",
+        "Brainwidemap"
+      ],
+      "qc": "NOT_SET",
+      "json": null
+    },
+    "clusters": {
+      "url": "https://openalyx.internationalbrainlab.org/datasets/f82667f2-f420-40a0-baac-f1cad26dda09",
+      "name": "spikes.clusters.npy",
+      "created_by": "12da3001",
+      "created_datetime": "2024-05-14T17:32:11.118235",
+      "dataset_type": "spikes.clusters",
+      "data_format": "npy",
+      "collection": "alf/probe01/pykilosort",
+      "session": "https://openalyx.internationalbrainlab.org/sessions/ff48aa1d-ef30-4903-ac34-8c41b738c1b9",
+      "file_size": 141159728,
+      "hash": "5c7c24407333f41275ca1bd8db8aecba",
+      "version": "2.35.0",
+      "experiment_number": 1,
+      "file_records": [
+        {
+          "id": "d56183bf-d352-4a3a-bb3a-d0b2108ef354",
+          "data_repository": "aws_zadorlab",
+          "data_repository_path": "data/zadorlab/Subjects/",
+          "relative_path": "CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.clusters.npy",
+          "data_url": "https://ibl-brain-wide-map-public.s3.amazonaws.com/data/zadorlab/Subjects/CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.clusters.f82667f2-f420-40a0-baac-f1cad26dda09.npy",
+          "exists": true
+        },
+        {
+          "id": "6c35c048-e36d-4f19-b64f-b3ead1a110c8",
+          "data_repository": "flatiron_zadorlab",
+          "data_repository_path": "/zadorlab/Subjects/",
+          "relative_path": "CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.clusters.npy",
+          "data_url": "https://ibl.flatironinstitute.org/public/zadorlab/Subjects/CSH_ZAD_025/2020-08-03/001/alf/probe01/pykilosort/#2024-05-06#/spikes.clusters.f82667f2-f420-40a0-baac-f1cad26dda09.npy",
+          "exists": true
+        }
+      ],
+      "auto_datetime": "2025-02-18T18:13:36.678855",
+      "revision": "2024-05-06",
+      "default_dataset": true,
+      "tags": [
+        "2024_Q2_IBL_et_al_BWM_iblsort",
+        "Brainwidemap"
+      ],
+      "qc": "NOT_SET",
+      "json": null
+    }
+  },
+  "downloaded_spike_index_range": [
+    400498,
+    405256
+  ],
+  "original_reference_sha256": "c1c4d20cb6fd8c8f378f54b52e4ea334a232055f3400245502857bb3753e6cae",
+  "correction_rule": "spikes.samples - raw slice first_sample. No waveform-fitted shift.",
+  "actual_raw_first_sample": 3030000,
+  "actual_raw_sample_rate_hz": 30000.0,
+  "metadata_first_sample": 3030000,
+  "count": 40,
+  "correction_min": 33,
+  "correction_max": 33,
+  "correction_median": 33.0,
+  "outside_input_count": 0,
+  "original_files_modified": false
+}

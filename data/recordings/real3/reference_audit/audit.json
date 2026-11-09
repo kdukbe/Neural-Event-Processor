@@ -1,0 +1,143 @@
+{
+  "dataset": "real3",
+  "source_datasets": {
+    "times": {
+      "url": "https://openalyx.internationalbrainlab.org/datasets/eb02c834-602a-43f3-95d2-4ff654430bae",
+      "name": "spikes.times.npy",
+      "created_by": "12da3001",
+      "created_datetime": "2024-05-14T17:01:22.600097",
+      "dataset_type": "spikes.times",
+      "data_format": "npy",
+      "collection": "alf/probe00/pykilosort",
+      "session": "https://openalyx.internationalbrainlab.org/sessions/69c9a415-f7fa-4208-887b-1417c1479b48",
+      "file_size": 256487736,
+      "hash": "8f7fa3b049c1e8a6f5339fc4b46c7382",
+      "version": "2.35.0",
+      "experiment_number": 1,
+      "file_records": [
+        {
+          "id": "afb3ce41-27d7-42f5-9b77-056fc24252bf",
+          "data_repository": "aws_cortexlab",
+          "data_repository_path": "data/cortexlab/Subjects/",
+          "relative_path": "KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.times.npy",
+          "data_url": "https://ibl-brain-wide-map-public.s3.amazonaws.com/data/cortexlab/Subjects/KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.times.eb02c834-602a-43f3-95d2-4ff654430bae.npy",
+          "exists": true
+        },
+        {
+          "id": "08f69c12-7230-46a6-bce7-b2950c7cda6f",
+          "data_repository": "flatiron_cortexlab",
+          "data_repository_path": "/cortexlab/Subjects/",
+          "relative_path": "KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.times.npy",
+          "data_url": "https://ibl.flatironinstitute.org/public/cortexlab/Subjects/KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.times.eb02c834-602a-43f3-95d2-4ff654430bae.npy",
+          "exists": true
+        }
+      ],
+      "auto_datetime": "2025-02-18T18:13:36.678855",
+      "revision": "2024-05-06",
+      "default_dataset": true,
+      "tags": [
+        "2024_Q2_IBL_et_al_BWM_iblsort",
+        "Brainwidemap"
+      ],
+      "qc": "NOT_SET",
+      "json": null
+    },
+    "samples": {
+      "url": "https://openalyx.internationalbrainlab.org/datasets/cbf48187-8e74-4d18-ac17-7f632ee33ce8",
+      "name": "spikes.samples.npy",
+      "created_by": "12da3001",
+      "created_datetime": "2024-05-14T17:01:20.637193",
+      "dataset_type": "spikes.samples",
+      "data_format": "npy",
+      "collection": "alf/probe00/pykilosort",
+      "session": "https://openalyx.internationalbrainlab.org/sessions/69c9a415-f7fa-4208-887b-1417c1479b48",
+      "file_size": 256487736,
+      "hash": "e2f2d74dd137ce842504332ecccb0a76",
+      "version": "2.35.0",
+      "experiment_number": 1,
+      "file_records": [
+        {
+          "id": "13ce0703-860c-4289-9dba-5c18e987a683",
+          "data_repository": "aws_cortexlab",
+          "data_repository_path": "data/cortexlab/Subjects/",
+          "relative_path": "KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.samples.npy",
+          "data_url": "https://ibl-brain-wide-map-public.s3.amazonaws.com/data/cortexlab/Subjects/KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.samples.cbf48187-8e74-4d18-ac17-7f632ee33ce8.npy",
+          "exists": true
+        },
+        {
+          "id": "968be086-8e3b-451a-a420-2a6275c4a085",
+          "data_repository": "flatiron_cortexlab",
+          "data_repository_path": "/cortexlab/Subjects/",
+          "relative_path": "KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.samples.npy",
+          "data_url": "https://ibl.flatironinstitute.org/public/cortexlab/Subjects/KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.samples.cbf48187-8e74-4d18-ac17-7f632ee33ce8.npy",
+          "exists": true
+        }
+      ],
+      "auto_datetime": "2025-02-18T18:13:36.678855",
+      "revision": "2024-05-06",
+      "default_dataset": true,
+      "tags": [
+        "2024_Q2_IBL_et_al_BWM_iblsort",
+        "Brainwidemap"
+      ],
+      "qc": "NOT_SET",
+      "json": null
+    },
+    "clusters": {
+      "url": "https://openalyx.internationalbrainlab.org/datasets/391ae36a-8f1c-415a-9200-225aeec41e86",
+      "name": "spikes.clusters.npy",
+      "created_by": "12da3001",
+      "created_datetime": "2024-05-14T17:01:23.818796",
+      "dataset_type": "spikes.clusters",
+      "data_format": "npy",
+      "collection": "alf/probe00/pykilosort",
+      "session": "https://openalyx.internationalbrainlab.org/sessions/69c9a415-f7fa-4208-887b-1417c1479b48",
+      "file_size": 128243932,
+      "hash": "e1276b55ff25222cb5214fa613c3dfe9",
+      "version": "2.35.0",
+      "experiment_number": 1,
+      "file_records": [
+        {
+          "id": "3de35e8f-240f-4287-9849-e790b9042518",
+          "data_repository": "aws_cortexlab",
+          "data_repository_path": "data/cortexlab/Subjects/",
+          "relative_path": "KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.clusters.npy",
+          "data_url": "https://ibl-brain-wide-map-public.s3.amazonaws.com/data/cortexlab/Subjects/KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.clusters.391ae36a-8f1c-415a-9200-225aeec41e86.npy",
+          "exists": true
+        },
+        {
+          "id": "d80735d4-4f79-4b65-8abd-792406c67c79",
+          "data_repository": "flatiron_cortexlab",
+          "data_repository_path": "/cortexlab/Subjects/",
+          "relative_path": "KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.clusters.npy",
+          "data_url": "https://ibl.flatironinstitute.org/public/cortexlab/Subjects/KS046/2020-12-03/001/alf/probe00/pykilosort/#2024-05-06#/spikes.clusters.391ae36a-8f1c-415a-9200-225aeec41e86.npy",
+          "exists": true
+        }
+      ],
+      "auto_datetime": "2025-02-18T18:13:36.678855",
+      "revision": "2024-05-06",
+      "default_dataset": true,
+      "tags": [
+        "2024_Q2_IBL_et_al_BWM_iblsort",
+        "Brainwidemap"
+      ],
+      "qc": "NOT_SET",
+      "json": null
+    }
+  },
+  "downloaded_spike_index_range": [
+    718770,
+    726964
+  ],
+  "original_reference_sha256": "e62fcbe57fc23402dd7fcc4cd73255eddc3b2f94bfe1df4ba42a46171d8cd1f8",
+  "correction_rule": "spikes.samples - raw slice first_sample. No waveform-fitted shift.",
+  "actual_raw_first_sample": 3120000,
+  "actual_raw_sample_rate_hz": 30000.0,
+  "metadata_first_sample": 3120000,
+  "count": 175,
+  "correction_min": 24,
+  "correction_max": 24,
+  "correction_median": 24.0,
+  "outside_input_count": 1,
+  "original_files_modified": false
+}

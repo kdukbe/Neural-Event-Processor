@@ -1,0 +1,20 @@
+# Local build products
+/build/
+/data/generated/
+__pycache__/
+*.py[cod]
+.venv/
+.Xil/
+xsim.dir/
+/xvlog.log
+/xvlog.pb
+/xelab.log
+/xelab.pb
+/xsim.log
+/vivado.log
+/vivado.jou
+/.history_sta
+/.proposal_build_*/
+~$*
+Thumbs.db
+.DS_Store

@@ -1,0 +1,13 @@
+# Preserve the exact bytes of files used in published SHA-256 records.
+HW/rtl/** -text
+comparisons/**/rtl_overrides/** -text
+SW/board/** -text
+data/** -text
+*.rpt -text
+*.dcp binary
+*.xsa binary
+*.zip binary
+*.npz binary
+*.npy binary
+*.png binary
+*.pdf binary

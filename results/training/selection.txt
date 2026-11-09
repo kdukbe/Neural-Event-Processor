@@ -1,0 +1,44 @@
+보드·전력 비교에 사용한 설정값
+
+Burst·real1·real2·real3에 적용한 설정이다.
+추가 8개체의 SD·SFE 품질 실험은 quality_evaluation.txt에 담았다.
+
+실제 Recording real1·real2·real3
+  Threshold = ceil(14 × sigma²)
+  sigma = 전체 채널의 |sample - 채널별 median|의 median / 0.6744897501960817
+  계수 14: 세 Recording 전체로 후보를 평가한 개발 설정.
+  학습 구간: 앞 20,000 sample/channel. 짧은 입력은 전체 구간 사용.
+  선정 근거: 시험한 앞부분 길이 중 세 Recording 모두 전체 구간과 같은 Threshold가 나온 길이.
+  Feature: Laplacian Score로 채널별 최대 7개 Offset 선택.
+  근거: He, Cai & Niyogi, “Laplacian Score for Feature Selection”, NeurIPS 2005, 식 (1).
+  학습 입력: Sample CSV. Reference는 검출·Feature 방식의 비교 평가에 사용.
+  적용 범위: 계수와 학습 길이는 이 세 Recording으로 선정·평가했다.
+
+실험에 사용한 값
+  burst: Threshold 24962 / 입력 33280 / Golden 504
+  real1: Threshold  1108 / 입력 480512 / Golden 852
+  real2: Threshold  1508 / 입력 480512 / Golden 472
+  real3: Threshold  1970 / 입력 480512 / Golden 878
+  실제 Offset·Enable: data/prepared/<데이터>/sfe_feature.csv
+
+Burst 데이터와 설정
+  채널마다 64-sample 파형 32개를 이어 붙였다. 16채널 전체로는 512개 파형이다.
+  Threshold = ceil(4 × 전체 채널의 평균 NEO) = 24962.
+  Feature 위치는 원본의 spike 종류(Class) 정보를 이용해 종류 구분에 유리한 위치를 골랐다.
+  세 비교 구조에 같은 입력·Threshold·Feature 설정을 사용했다.
+
+Burst 검출 결과: 512개 파형에서 504개 event가 나온 이유
+  원래 파형에서 검출된 event는 496개이고, 파형을 이어 붙인 경계에서 생긴 event는 8개이다.
+  원래 기대한 spike가 검출에서 빠진 16개 파형의 원인은 다음과 같다.
+    7개: NEO 값이 Threshold보다 작아 검출 조건에서 제외됐다.
+    8개: 연결 경계에서 먼저 event가 발생해, 이후 63개 sample의 검출을 막는 Refractory에 다음 spike가 걸렸다.
+    1개: 높아진 Threshold 때문에 앞 spike가 늦게 검출됐고, 그만큼 늦게 끝나는 Refractory에 다음 spike가 걸렸다.
+  따라서 512 - 16 + 경계에서 생긴 event 8 = 총 504개 출력이다.
+
+자료
+  details.zip / results/training/threshold_sweep: Threshold 방식 비교표
+  details.zip / results/training/threshold_selection: 후보·학습 길이·Reference 비교표
+  details.zip / results/training/feature_selection: 위치 후보 및 이웃 수 변화에 따른 평가
+  details.zip / results/training/burst_source_check: 각 Burst 파형을 원본 어디서 잘라왔는지와 검출에서 빠진 이유를 기록한 CSV
+  details.zip / results 및 prepared: 원본 상세 결과, 채널별 학습 기록, 실험 당시 Metadata
+  평가 코드: verification/training.zip. 프로젝트 최상위에 풀면 verification/training 경로가 복원된다.

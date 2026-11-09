@@ -1,0 +1,148 @@
+{
+  "dataset_name": "ibl_real_3",
+  "workload_label": "recording_3",
+  "source": {
+    "repository": "International Brain Laboratory public data release",
+    "pid": "1a276285-8b0e-4cc9-9f0a-a3a002978724",
+    "eid": "69c9a415-f7fa-4208-887b-1417c1479b48",
+    "probe": "probe00",
+    "spike_sorting_collection": "alf/probe00/pykilosort",
+    "spike_sorting_revision": "2024-05-06",
+    "raw_ap_access": "remote SpikeGLX AP stream through brainbox Streamer",
+    "spike_times_dataset_id": "eb02c834-602a-43f3-95d2-4ff654430bae",
+    "spike_clusters_dataset_id": "391ae36a-8f1c-415a-9200-225aeec41e86"
+  },
+  "selection": {
+    "method": "Choose the consecutive 16-channel block containing the most label=1 clusters; within 100-110 s choose the one-second bin closest to the median label=1 spike count.",
+    "search_interval_s": [
+      100,
+      110
+    ],
+    "activity_counts_per_second": [
+      231,
+      135,
+      187,
+      153,
+      175,
+      232,
+      116,
+      160,
+      189,
+      154
+    ],
+    "selected_interval_s": [
+      104.0,
+      105.0
+    ],
+    "first_sample": 3120000,
+    "sample_count_per_channel": 30000,
+    "source_channel_ids": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "local_channel_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "processing": {
+    "input_units": "volts",
+    "high_pass_filter": "third-order Butterworth, 300 Hz, zero-phase sosfiltfilt",
+    "common_reference": "sample-wise median of the selected 16 channels subtracted after high-pass filtering",
+    "quantization": "round to nearest 1 microvolt and clip to signed int16",
+    "output_units": "microvolts (1 CSV sample unit = 1 microvolt)",
+    "interleaving": "time-major: Ch0..Ch15 for each timestamp",
+    "clipped_low_count": 0,
+    "clipped_high_count": 0
+  },
+  "testbench": {
+    "sample_rate_per_channel_hz": 30000.0,
+    "aggregate_input_rate_rows_per_s": 480000.0,
+    "input_half_period_ns": 1041.6666666666667,
+    "golden_threshold": 15000,
+    "golden_refractory": 32,
+    "golden_event_count": 21,
+    "feature_config": "sfe_feature.csv",
+    "feature_config_policy": "The same preselected 16-channel feature configuration is used for all three evaluation sets to avoid retraining on test data.",
+    "threshold_note": "mainpath_golden.csv uses 15000 only to match the current RTL testbench setting. This is not claimed to be the accuracy-optimal threshold for the microvolt-domain real data."
+  },
+  "reference": {
+    "format": "event_id,timestamp,channel_id,spike_class,sample",
+    "quality_rule": "pykilosort clusters.metrics label == 1",
+    "spike_class": "cluster_id + 1",
+    "timestamp_rule": "round((spike_time - interval_start) * sample_rate)",
+    "event_count": 175,
+    "caveat": "This is a curated spike-sorting reference, not absolute biological ground truth."
+  },
+  "counts": {
+    "input_rows": 480000,
+    "channels": 16,
+    "samples_per_channel": 30000,
+    "good_clusters_total": 163,
+    "good_clusters_in_selected_channels": 19
+  },
+  "ranges": {
+    "raw_ap_volts_min": -0.00039140626904554665,
+    "raw_ap_volts_max": 0.00020859375945292413,
+    "processed_int16_min": -327,
+    "processed_int16_max": 123
+  },
+  "files": {
+    "original_raw_ap_volts.npz": {
+      "bytes": 458403,
+      "sha256": "e05222c1f4143913657a6e1246b5d6d289230faba7c8ef84993abd86c65d15af"
+    },
+    "processed_ap_uV_int16.npy": {
+      "bytes": 960128,
+      "sha256": "cae899df88e832b7a5804ef13998f9af0efa4b12642e77cdc93620d26c1ad3a7"
+    },
+    "input.csv": {
+      "bytes": 6208039,
+      "sha256": "6527e427e1117cfc909a1dcb2ddc28676ec59feba2e9f580147c56e514acc08a"
+    },
+    "reference_spikes.csv": {
+      "bytes": 3070,
+      "sha256": "e62fcbe57fc23402dd7fcc4cd73255eddc3b2f94bfe1df4ba42a46171d8cd1f8"
+    },
+    "channel_map.csv": {
+      "bytes": 172,
+      "sha256": "bf0adad9a4174271b62cd88285c1d3de177cd5ac7989596623095bfc15e23853"
+    },
+    "sfe_feature.csv": {
+      "bytes": 2461,
+      "sha256": "741086f2b853bbd0c785168e827df19d1f8caacb41f4acb22bc8760afeda7be3"
+    },
+    "mainpath_golden.csv": {
+      "bytes": 1201,
+      "sha256": "4aa7c7918581dce19e77b9894f9ed45cb015980460e7e34e51fd54f621679be8"
+    }
+  }
+}
