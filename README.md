@@ -33,7 +33,7 @@ NeuralCore는 Spike Detection, 64-sample Window 구성, Shared SFE를 담당한�
 
 블록별 분석에서 Always-on 8 MHz의 SFE는 Core 전력의 38.35–39.41%를 차지했다. Event-driven 적용 후에는 0.63–7.88%로 줄었다. [블록별 전력](results/power/module_breakdown.txt)에 입력별 값을 담았다.
 
-후속 Python 품질 실험에서는 IBL 8개체로 전처리·Threshold·Feature 위치를 비교했다. SD 평균 F1은 53.48%이며, Reference 파형의 SFE 종류 구분 정답률은 같은 평가 파형에서 74.98% → 82.47%로 향상됐다. 보드 비교에 사용한 설정은 유지하고, 추가 평가의 방법과 결과는 [보고서 5.5–5.6절](docs/Neural_Event_Processor_Report.pdf)과 [평가 요약](results/training/quality_evaluation.txt)에 담았다.
+후속 Python 품질 실험에서는 IBL 8개체로 전처리·Threshold·Feature 위치를 비교했다. SD 평균 F1은 53.48%이다. Reference 파형의 SFE 종류 구분 정답률은 같은 평가 파형에서 기존 설정 74.98% → 선정 방식 82.47%(Balanced accuracy 81.30% → 86.17%)였다. 다만 Balanced accuracy로는 균등 간격 7개 86.12%, 조건을 조정한 Laplacian 86.24%도 선정 방식과 비슷하므로, 이 결과는 기존 설정 대비 개선을 보여주며 위치 선정 방식 사이의 우열을 가리는 근거는 아니다([방법별 비교](results/training/sfe_evaluation/method_comparison.csv)). 보드 비교에 사용한 설정은 유지하고, 추가 평가의 방법과 결과는 [보고서 5.5–5.6절](docs/Neural_Event_Processor_Report.pdf)과 [평가 요약](results/training/quality_evaluation.txt)에 담았다.
 
 ## Folders
 
@@ -59,3 +59,10 @@ NeuralCore는 Spike Detection, 64-sample Window 구성, Shared SFE를 담당한�
 3. XSA의 Bitstream을 보드에 올리고 Application을 실행한다.
 
 Burst 실행 시 `PASS all 504 event records match Golden`을 확인한다. Always-on 비교군은 `comparisons/<구조>/xsa/<구조>.xsa`와 같은 C 코드를 사용한다.
+
+## License
+
+- **코드:** 본 프로젝트에서 작성한 RTL·Testbench·Python·C·스크립트에는 [MIT License](LICENSE)를 적용한다.
+- **실제 기록(real1–3) 유래 데이터:** IBL 원자료의 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 조건을 따른다.
+- **Burst 유래 데이터:** Quian Quiroga 등의 모의 신호에서 만든 자료로, 원자료의 이용 조건을 따른다.
+- **Vivado 산출물:** Block Design·XSA·DCP에 포함된 AMD(Xilinx) IP는 해당 도구의 라이선스 조건을 따른다.
